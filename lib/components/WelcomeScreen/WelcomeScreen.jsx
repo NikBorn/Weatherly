@@ -1,5 +1,6 @@
 import React from 'react';
-import './WelcomeScreen.css'
+import './WelcomeScreen.css';
+import GetWeather from '../GetWeather/GetWeather';
 
 const WelcomeScreen = () => {
   return (
@@ -7,10 +8,7 @@ const WelcomeScreen = () => {
       <header>
         it worked!
       </header>
-      <main>
-        <input type="text" placeholder="Enter Zipcode or City/State"/>
-        <button>Get Weather</button>
-      </main>
+      <GetWeather />
     </div>
   );
 };

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="87px" viewBox="0 0 118 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Cloudy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M514.619766,105.731622 C522.048039,107.831593 527.5,114.664756 527.5,122.770158 L527.5,123.296509 C527.5,133.069793 519.575944,141 509.801126,141 L438.198874,141 C428.433184,141 420.5,133.073877 420.5,123.296509 L420.5,122.770158 C420.5,115.664536 424.688617,109.533156 430.731806,106.715379 C429.246623,103.050137 428.425926,99.0243859 428.425926,94.8 C428.425926,77.7896297 441.733018,64 458.148148,64 C473.211807,64 485.658136,75.6124781 487.605461,90.6699596 C490.369301,88.7399219 493.698893,87.6133333 497.282407,87.6133333 C506.8579,87.6133333 514.62037,95.657284 514.62037,105.58 C514.62037,105.63059 514.620169,105.681131 514.619766,105.731622 Z" id="path-1"></path>
+        <filter x="-7.9%" y="-8.4%" width="115.9%" height="122.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.00485917412   0 0 0 0 0.499123697   0 0 0 0 0.608152636  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ICONS" transform="translate(-415.000000, -61.000000)">
+            <g id="Cloudy">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

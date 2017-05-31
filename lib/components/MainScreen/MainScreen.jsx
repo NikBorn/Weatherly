@@ -6,7 +6,7 @@ import DailyForecast from '../DailyForecast/DailyForecast';
 
 
 const MainScreen = ({weather}) => {
-
+  console.log('MainScreen', weather);
   return (
     <div>
       <CurrentHeader weather={weather}/>

@@ -5,6 +5,7 @@ import CurrentForecast from '../CurrentForecast/CurrentForecast'
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js'
 
 const CurrentHeader = ({weather}) => {
+  console.log('CurrentHeader', weather);
 
   const hourlyCardStyle = {
     backgroundImage: `url(${IconsImagesObj.rainingImage})`,
@@ -13,7 +14,7 @@ const CurrentHeader = ({weather}) => {
   return (
     <header style={hourlyCardStyle} className='current-header'>
       <CurrentLocationDate/>
-      <CurrentForecast currentWeather={weather}/>
+      <CurrentForecast weather={weather}/>
     </header>
   )
 }

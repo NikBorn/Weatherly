@@ -4,7 +4,7 @@ import './CurrentForecast.css';
 const CurrentForecast = () => {
   return (
     <div>
-      <img src="lib/icons/Cloudy.svg" alt="WTF!"></img>
+      <img src="lib/icons/Cloudy.svg"></img>
     </div>
   )
 }

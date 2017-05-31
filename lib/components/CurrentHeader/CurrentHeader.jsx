@@ -8,9 +8,6 @@ const CurrentHeader = () => {
 
   const hourlyCardStyle = {
     backgroundImage: `url(${IconsImagesObj.rainingImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
   }
 
   return (

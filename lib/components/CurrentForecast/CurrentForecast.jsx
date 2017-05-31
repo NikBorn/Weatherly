@@ -16,6 +16,9 @@ const CurrentForecast = ({ weather, location }) => {
       <img src={IconsImagesObj[weather.icon]}></img>
       <h1>{weather.temp}</h1>
       <h1>{weather.weather}</h1>
+      <h2>High: {weather.high}</h2>
+      <h2>Low: {weather.low}</h2>
+      <h2>Summary: {weather.summary}</h2>
     </header>
   );
 };

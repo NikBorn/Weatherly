@@ -1,7 +1,9 @@
 import React from 'react';
 import './HourlyCard.css';
 
+
 const HourlyCard = () => {
+
   return (
     <div>
       <img src="./lib/icons/Cloudy.svg" alt=""/>

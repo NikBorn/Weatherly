@@ -1,10 +1,9 @@
 import React from 'react';
 import './CurrentHeader.css';
-import CurrentLocationDate from '../CurrentLocationDate/CurrentLocationDate'
 import CurrentForecast from '../CurrentForecast/CurrentForecast'
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js'
 
-const CurrentHeader = ({weather}) => {
+const CurrentHeader = ({weather, location}) => {
   console.log('CurrentHeader', weather);
 
   const hourlyCardStyle = {
@@ -13,8 +12,10 @@ const CurrentHeader = ({weather}) => {
 
   return (
     <header style={hourlyCardStyle} className='current-header'>
-      <CurrentLocationDate/>
-      <CurrentForecast weather={weather}/>
+      <CurrentForecast weather={weather}
+                       location={location}
+                      />
+
     </header>
   )
 }

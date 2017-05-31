@@ -5,11 +5,13 @@ import HourlyForecast from '../HourlyForecast/HourlyForecast';
 import DailyForecast from '../DailyForecast/DailyForecast';
 
 
-const MainScreen = ({weather}) => {
+const MainScreen = ({weather, location}) => {
   console.log('MainScreen', weather);
   return (
     <div>
-      <CurrentHeader weather={weather}/>
+      <CurrentHeader weather={weather}
+                     location={location}
+        />
       <HourlyForecast/>
       <DailyForecast/>
     </div>

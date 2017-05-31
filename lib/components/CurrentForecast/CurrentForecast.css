@@ -1,0 +1,11 @@
+.change-city-btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.current-location,
+.current-date,
+.change-city-btn {
+  color: white;
+}

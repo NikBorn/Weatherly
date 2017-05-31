@@ -5,11 +5,11 @@ import HourlyForecast from '../HourlyForecast/HourlyForecast';
 import DailyForecast from '../DailyForecast/DailyForecast';
 
 
-const MainScreen = () => {
+const MainScreen = ({weather}) => {
 
   return (
     <div>
-      <CurrentHeader/>
+      <CurrentHeader weather={weather}/>
       <HourlyForecast/>
       <DailyForecast/>
     </div>

@@ -7,16 +7,14 @@ import DailyForecast from '../DailyForecast/DailyForecast';
 
 const MainScreen = ({weather, location}) => {
   return (
-    <div>
-      <CurrentForecast weather={weather}
+    <section>
+      <CurrentForecast weather={weather.current}
                        location={location}
       />
-      <HourlyForecast/>
-      <DailyForecast/>
-    </div>
+      <HourlyForecast weather={weather.hourly}/>
+      <DailyForecast weather={weather.daily}/>
+    </section>
   );
 };
-
-
 
 export default MainScreen;

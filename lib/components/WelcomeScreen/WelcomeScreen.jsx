@@ -4,12 +4,12 @@ import GetWeather from '../GetWeather/GetWeather';
 
 const WelcomeScreen = () => {
   return (
-    <div>
+    <section className="welcome-screen">
       <header>
-        it worked!
+        <h1>Welcome To Weatherly</h1>
       </header>
-      <GetWeather />
-    </div>
+      <GetWeather/>
+    </section>
   );
 };
 

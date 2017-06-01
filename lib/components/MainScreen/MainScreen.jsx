@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainScreen.css';
-import CurrentForecast from '../CurrentForecast/CurrentForecast';
+import CurrentForecast from '../CurrentForecast';
 import HourlyForecast from '../HourlyForecast/HourlyForecast';
 import DailyForecast from '../DailyForecast/DailyForecast';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
@@ -13,8 +13,8 @@ const MainScreen = ({weather, location}) => {
   const { current, hourly, daily} = weather;
 
   return (
-    <section classname='main-section' style={background}>
-      <CurrentForecast weather={weather.current}
+    <section className='main-section' style={background}>
+      <CurrentForecast weather={current}
                        location={location}
       />
     <h2 className='hourly-text'>Hourly Forecast</h2>

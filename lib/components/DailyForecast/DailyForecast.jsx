@@ -3,10 +3,11 @@ import './DailyForecast.css';
 import DailyCard from '../DailyCard/DailyCard';
 
 const DailyForecast = ({weather}) => {
+
   const weatherMap = () => {
     return weather.map(weatherObj => {
       return (
-        <DailyCard weather={weatherObj} key={Date.now()}/>
+        <DailyCard weather={weatherObj} key={weatherObj.date}/>
       );
     });
   };

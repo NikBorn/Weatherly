@@ -13,7 +13,7 @@ describe('DailyCard', () => {
     };
 
     const component = shallow(<DailyCard weather={weather}/>);
-    const date = component.find('.daily-date').children()
+    const date = component.find('.daily-date').children();
 
     expect(date).toEqual('Friday');
   });

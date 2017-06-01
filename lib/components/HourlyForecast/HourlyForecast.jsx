@@ -7,7 +7,7 @@ const HourlyForecast = ({weather}) => {
   const weatherMap = () => {
     return weather.map(weatherObj => {
       return (
-        <HourlyCard weather={weatherObj}/>
+        <HourlyCard weather={weatherObj} key={weatherObj.hour}/>
       );
     });
   };

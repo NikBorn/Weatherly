@@ -5,14 +5,12 @@ import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
 const WelcomeScreen = () => {
   const sectionStyle = {
-    backgroundImage: `url(${IconsImagesObj.tstorms})`,
+    backgroundImage: `url(${IconsImagesObj.tstormsImage})`,
   };
 
   return (
     <section className="welcome-screen" style={sectionStyle}>
-      <header>
-        <h1>Welcome To Weatherly</h1>
-      </header>
+        <h1 className="welcome-title">Welcome To Weatherly</h1>
       <SearchBar/>
     </section>
   );

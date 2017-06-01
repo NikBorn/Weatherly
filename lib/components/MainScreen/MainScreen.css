@@ -1,0 +1,6 @@
+.hourly-container,
+.daily-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}

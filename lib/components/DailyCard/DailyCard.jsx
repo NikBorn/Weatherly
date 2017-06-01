@@ -1,12 +1,16 @@
 import React from 'react';
 import './DailyCard.css';
 
-const DailyCard = () => {
+const DailyCard = ({weather}) => {
+  const {date, high, low, icon, condition} = weather;
+
   return (
     <div>
       <img src="lib/icons/Cloudy.svg" alt=""/>
-      <h2>Temp 80˚F</h2>
-      <p>Rainy, chance of precipitation 90% with 10mph winds.</p>
+      <h2>High {high}˚F</h2>
+      <h2>Low {low}˚F</h2>
+      <p>{condition}</p>
+      <p>{date}</p>
     </div>
   );
 };

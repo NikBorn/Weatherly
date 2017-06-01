@@ -6,7 +6,7 @@ const DailyForecast = ({weather}) => {
   const weatherMap = () => {
     return weather.map(weatherObj => {
       return (
-        <DailyCard weather={weatherObj}/>
+        <DailyCard weather={weatherObj} key={Date.now()}/>
       );
     });
   };

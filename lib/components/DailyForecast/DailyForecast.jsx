@@ -4,7 +4,7 @@ import DailyCard from '../DailyCard/DailyCard';
 
 const DailyForecast = ({weather}) => {
   const weatherMap = () => {
-    return weather.slice(1, 11).map(weatherObj => {
+    return weather.map(weatherObj => {
       return (
         <DailyCard weather={weatherObj}/>
       );

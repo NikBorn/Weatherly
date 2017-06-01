@@ -10,7 +10,7 @@ const MainScreen = ({weather, location}) => {
   const background = {
     backgroundImage: `url(${IconsImagesObj.rainImage})`,
   };
-  console.log(weather)
+  const { current, hourly, daily} = weather;
 
   return (
     <section classname='main-section' style={background}>
@@ -18,9 +18,9 @@ const MainScreen = ({weather, location}) => {
                        location={location}
       />
     <h2 className='hourly-text'>Hourly Forecast</h2>
-      <HourlyForecast weather={weather.hourly}/>
+      <HourlyForecast weather={hourly.slice(1, 8)}/>
       <h2 className='ten-day-text'>10 Day Forecast</h2>
-      <DailyForecast weather={weather.daily}/>
+      <DailyForecast weather={daily.slice(1, 11)}/>
     </section>
   );
 };

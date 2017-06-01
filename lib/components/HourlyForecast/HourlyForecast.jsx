@@ -5,7 +5,7 @@ import HourlyCard from '../HourlyCard/HourlyCard';
 const HourlyForecast = ({weather}) => {
 
   const weatherMap = () => {
-    return weather.slice(1, 8).map(weatherObj => {
+    return weather.map(weatherObj => {
       return (
         <HourlyCard weather={weatherObj}/>
       );

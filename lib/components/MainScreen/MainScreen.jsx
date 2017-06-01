@@ -6,17 +6,19 @@ import DailyForecast from '../DailyForecast/DailyForecast';
 
 
 const MainScreen = ({weather, location}) => {
+  console.log(weather)
+
   return (
-    <div>
-      <CurrentForecast weather={weather}
+    <section>
+      <CurrentForecast weather={weather.current}
                        location={location}
       />
-      <HourlyForecast/>
-      <DailyForecast/>
-    </div>
+      <h2>Hourly Forecast</h2>
+      <HourlyForecast weather={weather.hourly}/>
+      <h2>10 Day Forecast</h2>
+      <DailyForecast weather={weather.daily}/>
+    </section>
   );
 };
-
-
 
 export default MainScreen;

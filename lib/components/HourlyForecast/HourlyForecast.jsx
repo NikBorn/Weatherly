@@ -2,9 +2,20 @@ import React from 'react';
 import './HourlyForecast.css';
 import HourlyCard from '../HourlyCard/HourlyCard';
 
-const HourlyForecast = () => {
+const HourlyForecast = ({weather}) => {
+
+  const weatherMap = () => {
+    return weather.slice(1, 8).map(weatherObj => {
+      return (
+        <HourlyCard weather={weatherObj}/>
+      );
+    });
+  };
+
   return (
-    <HourlyCard/>
+    <article className='hourly-container'>
+      {weatherMap()}
+    </article>
   );
 };
 

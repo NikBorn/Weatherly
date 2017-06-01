@@ -1,14 +1,16 @@
 import React from 'react';
 import './HourlyCard.css';
+import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
 
-const HourlyCard = () => {
-
+const HourlyCard = ({weather}) => {
+  const {hour, condition, icon, temp} = weather;
   return (
-    <div>
-      <img src="./lib/icons/Cloudy.svg" alt=""/>
-      <h2>Temp 80˚F</h2>
-      <p>Rainy, chance of precipitation 90% with 10mph winds.</p>
+    <div className='card hourly'>
+      <p>{hour}</p>
+        <img src={IconsImagesObj[icon]}></img>
+      <h2>Temperature: {temp}˚F</h2>
+      <p>{condition}</p>
     </div>
   );
 };

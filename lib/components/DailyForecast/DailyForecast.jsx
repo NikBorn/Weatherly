@@ -2,12 +2,20 @@ import React from 'react';
 import './DailyForecast.css';
 import DailyCard from '../DailyCard/DailyCard';
 
-const DailyForecast = () => {
+const DailyForecast = ({weather}) => {
+  const weatherMap = () => {
+    return weather.slice(1, 11).map(weatherObj => {
+      return (
+        <DailyCard weather={weatherObj}/>
+      );
+    });
+  };
+
+
   return (
-    <section>
-      <h2>10 Day Forecast</h2>
-      <DailyCard/>
-    </section>
+    <article className='daily-container'>
+      {weatherMap()}
+    </article>
   );
 };
 

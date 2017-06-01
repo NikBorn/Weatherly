@@ -1,1 +1,8 @@
+.card-hourly {
+  border: 2px solid #FFFFFF;
+  /*padding: 10px;*/
+}
 
+.hourly-icon {
+margin-left: 15px;
+}

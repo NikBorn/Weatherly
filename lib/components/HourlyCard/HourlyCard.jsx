@@ -6,10 +6,10 @@ import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 const HourlyCard = ({weather}) => {
   const {hour, condition, icon, temp} = weather;
   return (
-    <div className='card hourly'>
+    <div className='card-hourly'>
       <p>{hour}</p>
-        <img src={IconsImagesObj[icon]}></img>
-      <h2>Temperature: {temp}˚F</h2>
+        <img className='hourly-icon' src={IconsImagesObj[icon]}></img>
+      <h2>Temp: {temp}˚F</h2>
       <p>{condition}</p>
     </div>
   );

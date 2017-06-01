@@ -4,3 +4,15 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
+.main-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.ten-day-text,
+.hourly-text {
+  margin: 10px 0;
+}

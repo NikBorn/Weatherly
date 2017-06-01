@@ -16,3 +16,7 @@
 .hourly-text {
   margin: 10px 0;
 }
+
+main {
+  background-color: rgba(0,0,0, .6);
+}

@@ -8,7 +8,7 @@ const HourlyCard = ({weather}) => {
   return (
     <div className='card-hourly'>
       <p>{hour}</p>
-        <img className='hourly-icon' src={IconsImagesObj[icon]}></img>
+        <img className='hourly-icon' src={IconsImagesObj[icon]} alt={icon}/>
       <h2>Temp: {temp}˚F</h2>
       <p>{condition}</p>
     </div>

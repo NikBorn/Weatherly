@@ -17,10 +17,12 @@ const MainScreen = ({weather, location}) => {
       <CurrentForecast weather={current}
                        location={location}
       />
-    <h2 className='hourly-text'>Hourly Forecast</h2>
-      <HourlyForecast weather={hourly.slice(1, 8)}/>
-      <h2 className='ten-day-text'>10 Day Forecast</h2>
-      <DailyForecast weather={daily.slice(1, 11)}/>
+      <main>
+        <h2 className='hourly-text'>Hourly Forecast</h2>
+        <HourlyForecast weather={hourly.slice(1, 8)}/>
+        <h2 className='ten-day-text'>10 Day Forecast</h2>
+        <DailyForecast weather={daily.slice(1, 11)}/>
+      </main>
     </section>
   );
 };

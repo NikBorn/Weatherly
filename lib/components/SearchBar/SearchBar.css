@@ -1,0 +1,24 @@
+.search-bar {
+  width: 75%;
+}
+.search-element {
+  font-size: 40px;
+}
+
+.search-btn {
+  width: 25%;
+  color: #FFFFFF;
+  background-color: #0FE83E;
+  border: none;
+}
+
+.search-btn:hover {
+  background-color: #31CC33;
+}
+
+
+
+.search-container {
+  width: 90%;
+  margin: 0px auto;
+}

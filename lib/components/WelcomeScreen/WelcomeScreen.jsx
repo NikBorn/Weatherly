@@ -1,11 +1,11 @@
 import React from 'react';
 import './WelcomeScreen.css';
-import GetWeather from '../GetWeather/GetWeather';
+import SearchBar from '../SearchBar/SearchBar';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
 const WelcomeScreen = () => {
   const sectionStyle = {
-    backgroundImage: `url(${IconsImagesObj.moonImage})`,
+    backgroundImage: `url(${IconsImagesObj.tstorms})`,
   };
 
   return (
@@ -13,7 +13,7 @@ const WelcomeScreen = () => {
       <header>
         <h1>Welcome To Weatherly</h1>
       </header>
-      <GetWeather/>
+      <SearchBar/>
     </section>
   );
 };

@@ -8,7 +8,7 @@ import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
 const MainScreen = ({weather, location}) => {
   const background = {
-    backgroundImage: `url(${IconsImagesObj.rainImage})`,
+    backgroundImage: `url(${IconsImagesObj.rainImage})`
   };
   const { current, hourly, daily} = weather;
 

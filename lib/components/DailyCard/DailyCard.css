@@ -1,6 +1,8 @@
 .daily-card {
-  border: 2px solid #FFFFFF;
+  /*border: 2px solid #FFFFFF;*/
   width: 140px;
+  text-align: center;
+  margin: 10px 0 0 10px;
 }
 
 .daily-high,

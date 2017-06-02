@@ -1,22 +1,32 @@
 .search-bar {
   width: 75%;
 }
+
 .search-element {
-  font-size: 40px;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  border: 2px solid #7FAEFF;
 }
+
+.search-bar {
+  color: 
+}
+
 
 .search-btn {
   width: 25%;
-  color: #FFFFFF;
-  background-color: #0FE83E;
+  color: #000;
+  background-color: #CBDEFF;
   border: none;
 }
 
 .search-btn:hover {
-  background-color: #31CC33;
+  background-color: #7FAEFF;
 }
 
 .search-container {
-  width: 90%;
+  width: 600px;
   margin: 0px auto;
 }

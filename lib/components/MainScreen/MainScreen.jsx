@@ -6,11 +6,11 @@ import DailyForecast from '../DailyForecast/DailyForecast';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
 
-const MainScreen = ({weather, location}) => {
+const MainScreen = ({ weather, location }) => {
   const background = {
     backgroundImage: `url(${IconsImagesObj.rainImage})`
   };
-  const { current, hourly, daily} = weather;
+  const { current, hourly, daily } = weather;
 
   return (
     <section className='main-section' style={background}>

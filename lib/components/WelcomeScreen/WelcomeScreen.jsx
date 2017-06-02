@@ -5,7 +5,7 @@ import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
 const WelcomeScreen = ({ changeLocation }) => {
   const sectionStyle = {
-    backgroundImage: `url(${IconsImagesObj.tstormsImage})`,
+    backgroundImage: `url(${IconsImagesObj.cloudyDayImage})`,
   };
 
   return (

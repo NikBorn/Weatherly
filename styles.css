@@ -9,7 +9,12 @@ h1, h2, h3, h4, h5, h6, p, html, body {
   text-shadow: 2px 2px 8px black;
 }
 
-
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 html, body {
   height: 100%;

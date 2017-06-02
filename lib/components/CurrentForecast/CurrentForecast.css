@@ -26,9 +26,11 @@
 }
 
 /* NOTE: when I put justify content on JUST THIS ARTICLE it applies it to the other two as well? */
-/*.current-summary-article {
+.current-summary-article {
+  padding: 20px;
   justify-content: center;
-}*/
+
+}
 
 .current-icon {
   width: 70%;
@@ -36,7 +38,7 @@
   text-shadow: 2px 2px 8px black;
 }
 
-.current-summary,
+
 .current-weather,
 .current-location {
   font-size: 40px;
@@ -44,6 +46,7 @@
 
 .current-summary {
   margin-top: 10px;
+  font-size: 30px;
 }
 
 .temp,
@@ -58,4 +61,8 @@
 
 .temp {
   font-size: 40px;
+}
+
+.current-header {
+  display: flex;
 }

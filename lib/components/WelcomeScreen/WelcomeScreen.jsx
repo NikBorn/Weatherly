@@ -3,7 +3,7 @@ import './WelcomeScreen.css';
 import SearchBar from '../SearchBar/SearchBar';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({ changeLocation }) => {
   const sectionStyle = {
     backgroundImage: `url(${IconsImagesObj.tstormsImage})`,
   };
@@ -11,7 +11,7 @@ const WelcomeScreen = () => {
   return (
     <section className="welcome-screen" style={sectionStyle}>
         <h1 className="welcome-title">Welcome To Weatherly</h1>
-      <SearchBar/>
+      <SearchBar changeLocation={changeLocation}/>
     </section>
   );
 };

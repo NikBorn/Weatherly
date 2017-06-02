@@ -4,16 +4,58 @@
   padding: 0;
 }
 
+.current-summary,
+.current-weather,
 .current-location,
 .current-date,
 .change-city-btn {
   color: white;
+  text-align: center;
 }
 
 .current-temperatures,
 .current-main,
 .current-summary-article {
-  display: inline-block;
+  display: inline-flex;
   width: 33%;
-  border: 2px solid #FFFFFF;
+  /*border: 2px solid #FFFFFF;*/
+  padding-bottom: 40px;
+  flex-direction: column;
+  height: 377px;
+  align-items: center;
+}
+
+/* NOTE: when I put justify content on JUST THIS ARTICLE it applies it to the other two as well? */
+/*.current-summary-article {
+  justify-content: center;
+}*/
+
+.current-icon {
+  width: 70%;
+  margin: 0px auto;
+  text-shadow: 2px 2px 8px black;
+}
+
+.current-summary,
+.current-weather,
+.current-location {
+  font-size: 40px;
+}
+
+.current-summary {
+  margin-top: 10px;
+}
+
+.temp,
+.current-temp {
+  text-align: center;
+}
+
+.current-temp {
+  font-size: 100px;
+  margin: 40px 0;
+}
+
+.temp {
+  font-size: 40px;
 }

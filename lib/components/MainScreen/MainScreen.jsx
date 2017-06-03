@@ -4,9 +4,10 @@ import CurrentForecast from '../CurrentForecast';
 import HourlyForecast from '../HourlyForecast/HourlyForecast';
 import DailyForecast from '../DailyForecast/DailyForecast';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
+import SearchBar from '../SearchBar/SearchBar';
 
 
-const MainScreen = ({ weather, location }) => {
+const MainScreen = ({ weather, location, changeLocation }) => {
   const background = {
     backgroundImage: `url(${IconsImagesObj.rainImage})`
   };
@@ -14,6 +15,7 @@ const MainScreen = ({ weather, location }) => {
 
   return (
     <section className='main-section' style={background}>
+      <SearchBar changeLocation={ changeLocation }/>
       <CurrentForecast weather={current}
                        location={location}
       />

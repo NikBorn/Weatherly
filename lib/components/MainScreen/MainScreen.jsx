@@ -14,10 +14,10 @@ const MainScreen = ({ weather, location, changeLocation }) => {
   const { current, hourly, daily } = weather;
 
   return (
-    <section className='main-section' style={background}>
+    <section className='main-section' style={ background }>
       <SearchBar changeLocation={ changeLocation }/>
-      <CurrentForecast weather={current}
-                       location={location}
+      <CurrentForecast weather={ current }
+                       location={ location }
       />
       <main>
         <h2 className='hourly-text'>Hourly Forecast</h2>

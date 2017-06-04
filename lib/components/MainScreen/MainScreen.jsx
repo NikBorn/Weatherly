@@ -8,10 +8,11 @@ import SearchBar from '../SearchBar/SearchBar';
 
 
 const MainScreen = ({ weather, location, changeLocation }) => {
-  const background = {
-    backgroundImage: `url(${IconsImagesObj.chanceflurriesImage})`
-  };
   const { current, hourly, daily } = weather;
+  const background = {
+    backgroundImage: `url(${IconsImagesObj[current.icon + 'Image']})`
+  };
+  console.log(`url(${IconsImagesObj[current.icon]}Image)`)
 
   return (
     <section className='main-section' style={ background }>

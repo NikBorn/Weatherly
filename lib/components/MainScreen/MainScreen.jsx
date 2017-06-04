@@ -9,7 +9,7 @@ import SearchBar from '../SearchBar/SearchBar';
 
 const MainScreen = ({ weather, location, changeLocation }) => {
   const background = {
-    backgroundImage: `url(${IconsImagesObj.rainImage})`
+    backgroundImage: `url(${IconsImagesObj.chanceflurriesImage})`
   };
   const { current, hourly, daily } = weather;
 

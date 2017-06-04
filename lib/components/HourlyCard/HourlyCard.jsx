@@ -9,7 +9,7 @@ const HourlyCard = ({weather}) => {
     <div className='card-hourly'>
       <p>{hour}</p>
         <img className='hourly-icon' src={IconsImagesObj[icon]} alt={icon}/>
-      <h2>Temp: {temp}˚F</h2>
+      <h2 className='hourly-temp'>Temp: {temp}˚F</h2>
       <p>{condition}</p>
     </div>
   );

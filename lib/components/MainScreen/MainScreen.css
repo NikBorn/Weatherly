@@ -20,8 +20,18 @@ main {
   margin: 20px 0;
 }
 
+.hourly-text {
+  padding-top: 20px;
+}
+
 main {
-  background-color: rgba(0,0,0, .25);
+  width: 90%;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #FFF;
+  /*background-color: rgba(255,255,255, .2);*/
+  /*background-color: rgba(0,0,0, .25);*/
+
 }
 
 h1, h2, h3, p {

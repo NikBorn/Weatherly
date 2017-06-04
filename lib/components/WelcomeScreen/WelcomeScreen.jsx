@@ -10,7 +10,7 @@ const WelcomeScreen = ({ changeLocation }) => {
 
   return (
     <section className="welcome-screen" style={sectionStyle}>
-        <h1 className="welcome-title">Welcome To Weatherly</h1>
+      <h1 className="welcome-title">Welcome To Weatherly</h1>
       <SearchBar changeLocation={changeLocation}/>
     </section>
   );

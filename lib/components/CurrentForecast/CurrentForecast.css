@@ -1,14 +1,8 @@
-.change-city-btn {
-  background: none;
-  border: none;
-  padding: 0;
-}
 
 .current-summary,
 .current-weather,
 .current-location,
-.current-date,
-.change-city-btn {
+.current-date {
   color: white;
   text-align: center;
 }
@@ -19,13 +13,14 @@
   display: inline-flex;
   width: 33%;
   /*border: 2px solid #FFFFFF;*/
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   flex-direction: column;
   height: 377px;
   align-items: center;
+  justify-content: center;
 }
 
-/* NOTE: when I put justify content on JUST THIS ARTICLE it applies it to the other two as well? */
+
 .current-summary-article {
   padding: 20px;
   justify-content: center;
@@ -34,7 +29,6 @@
 .current-icon {
   width: 70%;
   margin: 0px auto;
-  text-shadow: 2px 2px 8px black;
 }
 
 .current-weather,
@@ -43,7 +37,6 @@
 }
 
 .current-summary {
-  margin-top: 10px;
   font-size: 30px;
 }
 
@@ -53,8 +46,8 @@
 }
 
 .current-temp {
-  font-size: 100px;
-  margin: 40px 0;
+  font-size: 90px;
+  margin: 30px 0;
 }
 
 .temp {
@@ -63,5 +56,5 @@
 
 .current-header {
   display: flex;
-  justify-content: space-around;
+  margin-top: 20px;
 }

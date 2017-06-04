@@ -22,7 +22,8 @@ const CurrentForecast = ({ weather }) => {
       </article>
 
       <article className='current-summary-article'>
-        <h2 className='current-summary'>Summary: { summary }</h2>
+        <h2 className='current-summary'>CURRENT FORECAST:</h2>
+        <h2 className='current-summary'>{ summary }</h2>
       </article>
     </header>
   );

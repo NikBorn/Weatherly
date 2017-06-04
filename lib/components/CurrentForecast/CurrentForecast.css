@@ -29,7 +29,6 @@
 .current-summary-article {
   padding: 20px;
   justify-content: center;
-
 }
 
 .current-icon {
@@ -37,7 +36,6 @@
   margin: 0px auto;
   text-shadow: 2px 2px 8px black;
 }
-
 
 .current-weather,
 .current-location {
@@ -65,4 +63,5 @@
 
 .current-header {
   display: flex;
+  justify-content: space-around;
 }

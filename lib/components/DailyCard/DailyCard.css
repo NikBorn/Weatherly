@@ -5,9 +5,12 @@
   text-align: center;
   margin: 10px 0 0 10px;
   /*background-color: rgba(255,255,255, .25);*/
-  background-color: rgba(0,0,0, .2);
+  background-color: rgba(0,0,0, .6);
   padding: 10px;
   /*display: inline-block;*/
+}
+.daily-card:nth-of-type(1) {
+  margin: 10px 0 0 0;
 }
 
 

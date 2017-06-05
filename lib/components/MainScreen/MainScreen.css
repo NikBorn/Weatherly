@@ -11,19 +11,16 @@
   background-repeat: no-repeat;
 }
 
-main {
-    padding-top: 10px;
-}
-
 .ten-day-text,
 .hourly-text {
   margin: 20px 0;
+  background-color: rgba(0,0,0, .6);
 }
 
 main {
-  width: 90%;
-  padding: 0 20px;
+
   margin: 0 auto;
+  width: 95%;
   /*background-color: #FFF;*/
   /*background-color: rgba(255,255,255, .2);*/
   /*background-color: rgba(0,0,0, .25);*/

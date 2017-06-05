@@ -11,6 +11,8 @@
   display: block;
   margin: 20px auto 0;
   width: 95%;
+  background-color: rgba(0,0,0, .6);
+  padding: 10px;
 }
 
 .current-temperatures,
@@ -25,6 +27,8 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  background-color: rgba(0,0,0, .6);
+  padding: 10px;
 }
 
 

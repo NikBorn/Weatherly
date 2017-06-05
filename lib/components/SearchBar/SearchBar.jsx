@@ -7,10 +7,24 @@ import IconsImagesObj from '../IconsImagesObj/IconsImagesObj';
 export default class SearchBar extends Component {
   constructor() {
     super();
+    this.focus = this.focus.bind(this);
     this.state = {
       input: '',
       trie: {},
     };
+  }
+
+  // tabComplete() {
+  //
+  // }
+  //
+  checkKeyPress(key) {
+    const { changeLocation } = this.props;
+    const { input } = this.state;
+
+    if (key === 13 && input.length > 0) {
+      changeLocation(input)
+    }
   }
 
   componentWillMount() {
@@ -22,15 +36,20 @@ export default class SearchBar extends Component {
   autocomplete(str) {
     const suggestions = this.state.trie.suggest(str);
 
-    if (suggestions.length > 5) {
-      suggestions.splice(5, suggestions.length);
-    }
-
-    return suggestions.map(e => (
-      <li key={e} className='autocomplete-item'>
-        {e}
+    return suggestions.map(suggestion => (
+      <li key={suggestion}
+          className='autocomplete-item'
+          onClick={(e) => {
+            this.setState({ input: e.target.textContent });
+            this.searchBar.focus();
+          }}>
+        {suggestion}
       </li>
     ));
+  }
+
+  focus() {
+    this.searchBar.focus();
   }
 
   render() {
@@ -43,13 +62,22 @@ export default class SearchBar extends Component {
     return (
       <div className='search-container'>
         <input className='search-bar search-element'
-          type="text"
-          placeholder="Enter Zipcode or City/State"
-          onInput={(e) => {
-            this.setState({ input: e.target.value });
-          }}/>
+               type='text'
+               placeholder="Enter Zipcode or City/State"
+               value={input}
+               onKeyUp={(e) => {
+                 this.checkKeyPress(e.keyCode);
+               }}
+               onChange={(e) => {
+                 this.setState({ input: e.target.value });
+               }}
+               ref={(selection) => { this.searchBar = selection; }}
+        />
         <button className='search-btn search-element'
-                onClick={() => changeLocation(input)}
+                onClick={() => {
+                  changeLocation(input);
+                  this.setState({ input: '' });
+                }}
                 style={ background }>
         </button>
         <ul className='autocomplete-list'>

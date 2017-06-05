@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+.current-location-container {
+  display: block;
+  margin: 20px auto 0;
+  width: 95%;
+}
+
 .current-temperatures,
 .current-main,
 .current-summary-article {
@@ -15,15 +21,16 @@
   /*border: 2px solid #FFFFFF;*/
   padding-bottom: 20px;
   flex-direction: column;
-  height: 377px;
+  height: 250px;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 
 .current-summary-article {
   padding: 20px;
-  justify-content: center;
+  align-items: left;
 }
 
 .current-icon {
@@ -37,7 +44,14 @@
 }
 
 .current-summary {
+  font-size: 26px;
+  text-align: left;
+}
+
+.current-summary-title {
   font-size: 30px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .temp,
@@ -46,15 +60,16 @@
 }
 
 .current-temp {
-  font-size: 90px;
-  margin: 30px 0;
+  font-size: 70px;
+  margin: 20px 0;
 }
 
 .temp {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .current-header {
   display: flex;
-  margin-top: 20px;
+  margin: 10px auto 0 auto;
+  width: 95%;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import DailyCard from '../lib/components/DailyCard/DailyCard';
+import MockData from '../lib/MockData';
 
 describe('DailyCard', () => {
   it('should render a forecast card', () => {

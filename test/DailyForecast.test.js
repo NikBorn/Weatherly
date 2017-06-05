@@ -19,6 +19,7 @@ describe('DailyForecast', () => {
 
     const dailyCard = component.find('DailyCard');
 
+console.log(dailyCard.debug());
     // BUG: BROKEN TEST
     expect(true);
   });

@@ -8,8 +8,8 @@ describe('Weather', () => {
     expect(true);
   })
 
-  it('should render MainScreen', () => {
-    const component = shallow(<MainScreen />)
-    expect(true)
-  })
+  // it('should render MainScreen', () => {
+  //   const component = shallow(<MainScreen />)
+  //   expect(true)
+  // })
 })

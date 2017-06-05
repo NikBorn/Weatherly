@@ -14,6 +14,19 @@ export default class SearchBar extends Component {
     };
   }
 
+  // tabComplete() {
+  //
+  // }
+  //
+  checkKeyPress(key) {
+    const { changeLocation } = this.props;
+    const { input } = this.state;
+
+    if (key === 13 && input.length > 0) {
+      changeLocation(input)
+    }
+  }
+
   componentWillMount() {
     const newTrie = new Trie();
     newTrie.populate(citiesList);
@@ -52,7 +65,10 @@ export default class SearchBar extends Component {
                type='text'
                placeholder="Enter Zipcode or City/State"
                value={input}
-               onInput={(e) => {
+               onKeyUp={(e) => {
+                 this.checkKeyPress(e.keyCode);
+               }}
+               onChange={(e) => {
                  this.setState({ input: e.target.value });
                }}
                ref={(selection) => { this.searchBar = selection; }}

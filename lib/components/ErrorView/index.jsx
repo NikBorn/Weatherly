@@ -10,8 +10,8 @@ const ErrorView = ({ changeLocation }) => {
 
   return (
     <section className="Erroorview-section" style={sectionStyle}>
-      <p>There was an error</p>
-      <p>Please enter a valid location</p>
+      <p className='error-text1 error-txt'>There was an error</p>
+      <p className='error-text2 error-txt'>Please enter a valid location</p>
       <SearchBar changeLocation={changeLocation}/>
     </section>
   )

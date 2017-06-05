@@ -1,4 +1,5 @@
-.search-bar {
+.search-bar,
+.autocomplete-list {
   width: 70%;
 }
 
@@ -8,17 +9,19 @@
   padding: 5px;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
-  border: 2px solid #7FAEFF;
+  border: 1px solid #676565;
 }
 
 .search-bar::-webkit-input-placeholder {
-  color: #3F577F;
+  color: #606060;
 }
 
 .search-btn {
   width: 30%;
   color: #000;
-  background-color: #CBDEFF;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .search-btn:hover {
@@ -27,6 +30,13 @@
 }
 
 .search-container {
+  position: relative;
   width: 600px;
   margin: 0px auto;
+}
+
+.autocomplete-list {
+  position: absolute;
+  background-color: #fff;
+  list-style-type: none;
 }

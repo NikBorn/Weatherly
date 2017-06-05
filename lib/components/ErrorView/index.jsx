@@ -3,7 +3,7 @@ import './ErrorView.css';
 import SearchBar from '../SearchBar/SearchBar';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj.js';
 
-const ErrorView = ({ error, changeLocation }) => {
+const ErrorView = ({ changeLocation }) => {
   const sectionStyle = {
     backgroundImage: `url(${IconsImagesObj.nt_clearImage})`,
   };

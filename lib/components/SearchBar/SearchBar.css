@@ -27,6 +27,12 @@
 }
 
 .search-container {
+  position: relative;
   width: 600px;
   margin: 0px auto;
+}
+
+.autocomplete-list {
+  position: absolute;
+  
 }

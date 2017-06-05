@@ -17,5 +17,4 @@ describe('DailyCard', () => {
 
     expect(date).toEqual('Friday');
   });
-
-})
+});

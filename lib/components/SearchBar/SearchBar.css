@@ -1,4 +1,5 @@
-.search-bar {
+.search-bar,
+.autocomplete-list {
   width: 70%;
 }
 
@@ -8,11 +9,11 @@
   padding: 5px;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
-  border: 2px solid #7FAEFF;
+  border: 1px solid #676565;
 }
 
 .search-bar::-webkit-input-placeholder {
-  color: #3F577F;
+  color: #606060;
 }
 
 .search-btn {
@@ -34,5 +35,6 @@
 
 .autocomplete-list {
   position: absolute;
-  
+  background-color: #fff;
+  list-style-type: none;
 }

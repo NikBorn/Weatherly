@@ -19,7 +19,9 @@
 .search-btn {
   width: 30%;
   color: #000;
-  background-color: #CBDEFF;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .search-btn:hover {

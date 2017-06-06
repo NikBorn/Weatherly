@@ -39,6 +39,7 @@ export default class SearchBar extends Component {
 
     return suggestions.map(suggestion => (
       <li key={suggestion}
+          id='errorSearch'
           className='autocomplete-item'
           onClick={(e) => {
             this.setState({ input: e.target.textContent });

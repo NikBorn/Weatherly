@@ -50,7 +50,7 @@
 .autocomplete-list {
   position: absolute;
   top: 30px;
-  max-height: 180px;
+  max-height: 120px;
   padding: 0 5px;
   background-color: #fff;
   list-style-type: none;

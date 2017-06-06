@@ -4,6 +4,7 @@ import Trie from '@coleworsley/complete-me';
 import citiesList from '../../citiesList';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj';
 
+
 export default class SearchBar extends Component {
   constructor() {
     super();
@@ -14,17 +15,30 @@ export default class SearchBar extends Component {
     };
   }
 
+  changeCase(place) {
+    const city = place.split('');
+    const state = city.splice(city.indexOf(','), city.length).map(e => e.toUpperCase());
+    const cityUpperCase = city.reduce((str, letter, i, array) => {
+      if (i === 0 || array[i - 1] === ' ') {
+        str += letter.toUpperCase();
+      } else {
+        str += letter;
+      }
+      return str;
+    }, '');
+    return [...cityUpperCase, ...state].join('');
+  }
+
   checkKeyPress(event) {
     const { changeLocation } = this.props;
     const { input, trie } = this.state;
     const suggestions = trie.suggest(input);
 
-    console.log(event.keyCode)
-
     if (event.keyCode === 13 && input.length > 0) {
       changeLocation(input);
-    } else if (event.keyCode === 9) {
-      this.setState({ input: suggestions[0] });
+      this.setState({ input: '' });
+    } else if (event.keyCode === 9 && input.length > 0) {
+      this.setState({ input: this.changeCase(suggestions[0]) });
     }
   }
 
@@ -45,7 +59,7 @@ export default class SearchBar extends Component {
             this.setState({ input: e.target.textContent });
             this.searchBar.focus();
           }}>
-        {suggestion}
+        {this.changeCase(suggestion)}
       </li>
     ));
   }
@@ -56,13 +70,13 @@ export default class SearchBar extends Component {
 
   render() {
     const { input } = this.state;
-    const { changeLocation } = this.props;
+    const { changeLocation, currentID } = this.props;
     const background = {
       backgroundImage: `url(${IconsImagesObj.magnifyingGlass})`,
     };
 
     return (
-      <div className='search-container'>
+      <div className='search-container' id={currentID}>
         <input className='search-bar search-element'
                type='text'
                placeholder="Enter Zipcode or City/State"

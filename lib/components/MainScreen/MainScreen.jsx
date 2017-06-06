@@ -16,10 +16,12 @@ const MainScreen = ({ weather, location, changeLocation }) => {
 
   return (
     <section className='main-section' style={ background }>
+
       <nav className='current-nav'>
-        <SearchBar changeLocation={ changeLocation }/>
+          <SearchBar changeLocation={ changeLocation } currentID='main-search'/>
         <h1 className='title'>WEATHERLY</h1>
       </nav>
+
       <CurrentForecast weather={ current }
                        location={ location }
       />

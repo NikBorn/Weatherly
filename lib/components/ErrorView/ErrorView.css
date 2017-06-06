@@ -22,3 +22,8 @@
 .error-text2 {
   margin-bottom: 20px;
 }
+
+#error-search {
+  left: 100px;
+  background-color: magenta;
+}

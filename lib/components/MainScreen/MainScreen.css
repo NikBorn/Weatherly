@@ -5,6 +5,20 @@
   justify-content: space-between;
 }
 
+.current-nav {
+  background-color: rgba(0,0,0, .8);
+  width: 100%;
+  margin-bottom: 20px;
+  height: 60px;
+  padding: 10px 0 5px 38px;
+}
+
+.title {
+  font-size: 25px;
+  /*margin-left: 20px;*/
+  margin-top: 5px;
+}
+
 .main-section {
   background-size: cover;
   background-position: center;

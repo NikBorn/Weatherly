@@ -2,6 +2,7 @@
   position: relative;
   width: 400px;
   margin: 0px auto;
+  left: 390px;
 }
 
 .search-bar,
@@ -11,7 +12,7 @@
 
 .search-element {
   position: absolute;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
   padding: 5px;
   font-family: 'Roboto', sans-serif;
@@ -37,8 +38,8 @@
   background-repeat: no-repeat;
   background-size: 26px;
   background-position: center;
-  right: 5px;
-  top: 3px;
+  right: 0px;
+  /*top: 1px;*/
   border: none;
 }
 
@@ -74,7 +75,7 @@
 }
 
 #main-search {
-  left: 506px
+  left: 506px;
 }
 
 #main-search input {
@@ -93,7 +94,9 @@
 
 .title {
   padding-left: 35px;
-  padding-top: 6px
+  padding-top: 6px;
+  padding-bottom: 40px;
+
 }
 
 #main-search .autocomplete-list {

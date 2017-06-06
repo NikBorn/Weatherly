@@ -103,3 +103,17 @@
   width: 300px;
   top: 20px;
 }
+
+#error-search .autocomplete-list,
+#error-search button,
+#error-search input
+ {
+  right: 390px;
+}
+
+#welcome-search .autocomplete-list,
+#welcome-search button,
+#welcome-search input
+ {
+  right: 390px;
+}

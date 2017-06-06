@@ -72,3 +72,31 @@
   background-color: #146BFE;
   color: #fff;
 }
+
+#main-search {
+  left: 506px
+}
+
+#main-search input {
+  height: 28px;
+  margin-top: 5px;
+  width: 300px;
+  font-size: 20px;
+}
+
+#main-search button {
+  height: 28px;
+  right: 100px;
+  background-size: 20px;
+  top: 4px;
+}
+
+.title {
+  padding-left: 35px;
+  padding-top: 6px
+}
+
+#main-search .autocomplete-list {
+  width: 300px;
+  top: 20px;
+}

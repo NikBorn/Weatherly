@@ -17,6 +17,7 @@ const MainScreen = ({ weather, location, changeLocation }) => {
   return (
     <section className='main-section' style={ background }>
       <SearchBar changeLocation={ changeLocation } currentID='main-search'/>
+      <h1 className='title'>WEATHERLY</h1>
       <CurrentForecast weather={ current }
                        location={ location }
       />

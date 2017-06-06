@@ -39,7 +39,7 @@ export default class SearchBar extends Component {
       this.setState({ input: '' });
     } else if (event.keyCode === 9 && input.length > 0) {
       this.setState({ input: this.changeCase(suggestions[0]) });
-    } 
+    }
   }
 
   componentWillMount() {
@@ -69,13 +69,13 @@ export default class SearchBar extends Component {
 
   render() {
     const { input } = this.state;
-    const { changeLocation } = this.props;
+    const { changeLocation, currentID } = this.props;
     const background = {
       backgroundImage: `url(${IconsImagesObj.magnifyingGlass})`,
     };
 
     return (
-      <div className='search-container'>
+      <div className='search-container' id={currentID}>
         <input className='search-bar search-element'
                type='text'
                placeholder="Enter Zipcode or City/State"

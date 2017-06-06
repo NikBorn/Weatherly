@@ -4,6 +4,7 @@ import Trie from '@coleworsley/complete-me';
 import citiesList from '../../citiesList';
 import IconsImagesObj from '../IconsImagesObj/IconsImagesObj';
 
+
 export default class SearchBar extends Component {
   constructor() {
     super();
@@ -35,9 +36,10 @@ export default class SearchBar extends Component {
 
     if (event.keyCode === 13 && input.length > 0) {
       changeLocation(input);
-    } else if (event.keyCode === 9) {
-      this.setState({ input: suggestions[0] });
-    }
+      this.setState({ input: '' });
+    } else if (event.keyCode === 9 && input.length > 0) {
+      this.setState({ input: this.changeCase(suggestions[0]) });
+    } 
   }
 
   componentWillMount() {

@@ -8,38 +8,37 @@
 }
 
 .current-location-container {
+  background-color: rgba(0,0,0, .6);
   display: block;
   margin: 0 auto;
-  width: 95%;
-  background-color: rgba(0,0,0, .6);
   padding: 10px;
+  width: 95%;
 }
 
 .current-temperatures,
 .current-main,
 .current-summary-article {
+  align-items: center;
+  background-color: rgba(0,0,0, .6);
   display: inline-flex;
-  width: 33%;
-  /*border: 2px solid #FFFFFF;*/
-  padding-bottom: 20px;
   flex-direction: column;
   height: 250px;
-  align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: rgba(0,0,0, .6);
   padding: 10px;
+  padding-bottom: 20px;
+  width: 33%;
 }
 
 
 .current-summary-article {
-  padding: 20px;
   align-items: left;
+  padding: 20px;
 }
 
 .current-icon {
-  width: 70%;
   margin: 0px auto;
+  width: 70%;
 }
 
 .current-weather,
@@ -54,8 +53,8 @@
 
 .current-summary-title {
   font-size: 30px;
-  text-align: left;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .temp,

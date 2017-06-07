@@ -7,8 +7,6 @@
 
 .current-nav {
   background-color: rgba(0,0,0, .8);
-  width: 100%;
-  margin-bottom: 20px;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -22,15 +20,15 @@
 }
 
 .main-section {
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ten-day-text,
 .hourly-text {
-  margin: 20px 0;
   background-color: rgba(0,0,0, .6);
+  margin: 20px 0;
 }
 
 main {

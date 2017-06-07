@@ -9,10 +9,10 @@ import SearchBar from '../SearchBar/SearchBar';
 
 const MainScreen = ({ weather, location, changeLocation }) => {
   const { current, hourly, daily } = weather;
+  const imagePath = !IconsImagesObj[current.icon + 'Image'] ? IconsImagesObj.cloudyImage : IconsImagesObj[current.icon + 'Image'];
   const background = {
-    backgroundImage: `url(${IconsImagesObj[current.icon + 'Image']})`
+    backgroundImage: `url(${imagePath})`,
   };
-  console.log(`url(${IconsImagesObj[current.icon]}Image)`)
 
   return (
     <section className='main-section' style={ background }>

@@ -20,9 +20,7 @@ const MainScreen = ({ weather, location, changeLocation }) => {
         <h1 className='title'>WEATHERLY</h1>
         <SearchBar changeLocation={ changeLocation } currentID='main-search'/>
       </nav>
-      <CurrentForecast weather={ current }
-                       location={ location }
-      />
+      <CurrentForecast weather={ current }/>
       <main>
         <h2 className='hourly-text'>Hourly Forecast</h2>
         <HourlyForecast weather={hourly.slice(1, 8)}/>

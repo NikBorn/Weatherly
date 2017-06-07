@@ -1,6 +1,4 @@
 .search-container {
-  left: 390px;
-  margin: 0px auto;
   position: relative;
   width: 400px;
   margin: 0px auto;
@@ -33,9 +31,6 @@
   background-position: center;
   right: 0px;
   border: none;
-  height: 35px;
-  right: 0px;
-  width: 35px;
 }
 
 .autocomplete-item:hover,
@@ -51,19 +46,19 @@
 }
 
 .autocomplete-list {
-  background-color: #fff;
-  cursor: pointer;
-  list-style-type: none;
-  max-height: 120px;
-  overflow-y: scroll;
-  padding: 0 5px;
   position: absolute;
   top: 30px;
+  max-height: 120px;
+  padding: 0 5px;
+  background-color: #fff;
+  list-style-type: none;
+  cursor: pointer;
+  overflow-y: scroll;
 }
 
 .autocomplete-item {
-  border-bottom: solid 1px #676565;
   padding: 5px;
+  border-bottom: solid 1px #676565;
 }
 
 .autocomplete-item:last-child {

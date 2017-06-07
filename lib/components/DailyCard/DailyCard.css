@@ -1,13 +1,13 @@
 .daily-card {
   background-color: rgba(0,0,0, .6);
-  margin: 10px 0 0 10px;
+  margin-right: 10px;
   min-width: 150px;
   max-width: 150px;
   padding: 10px;
   text-align: center;
 }
-.daily-card:nth-of-type(1) {
-  margin: 10px 0 0 0;
+.daily-card:last-child {
+  margin-right: 0;
 }
 
 .daily-condition,

@@ -53,7 +53,6 @@ export default class SearchBar extends Component {
 
     return suggestions.map(suggestion => (
       <li key={suggestion}
-          id='errorSearch'
           className='autocomplete-item'
           onClick={(e) => {
             this.setState({ input: e.target.textContent });
@@ -77,25 +76,29 @@ export default class SearchBar extends Component {
 
     return (
       <div className='search-container' id={currentID}>
-        <input className='search-bar search-element'
-               type='text'
-               placeholder="Enter Zipcode or City/State"
-               value={input}
-               onKeyDown={(e) => {
-                 this.checkKeyPress(e);
-               }}
-               onChange={(e) => {
-                 this.setState({ input: e.target.value });
-               }}
-               ref={(selection) => { this.searchBar = selection; }}
-        />
-        <button className='search-btn search-element'
-                onClick={() => {
-                  changeLocation(input);
-                  this.setState({ input: '' });
-                }}
-                style={ background }>
-        </button>
+        <div className='search-box'>
+          <input className='search-bar search-element'
+            type='text'
+            placeholder="Enter Zipcode or City/State"
+            value={input}
+            onKeyDown={(e) => {
+              this.checkKeyPress(e);
+            }}
+            onChange={(e) => {
+              this.setState({ input: e.target.value });
+            }}
+            ref={(selection) => { this.searchBar = selection; }}
+            />
+
+          <button className='search-btn search-element'
+            onClick={() => {
+              changeLocation(input);
+              this.setState({ input: '' });
+            }}
+            style={ background }>
+          </button>
+        </div>
+
         <ul className='autocomplete-list'>
           {this.autocomplete(this.state.input)}
         </ul>
